@@ -1,0 +1,16 @@
+Alice Johnson
+Data Scientist | 3 years experience
+Email: alice.j@example.com
+
+Skills:
+- Python, Pandas, NumPy, TensorFlow
+- Machine learning model development
+- Data visualization with Matplotlib and Seaborn
+
+Experience:
+2021–Present: Junior Data Scientist at Insight Analytics
+- Built and deployed regression models for sales forecasting.
+- Automated data cleaning pipelines using Python scripts.
+
+Education:
+B.Sc. in Computer Science, University of Michigan

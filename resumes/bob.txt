@@ -1,0 +1,16 @@
+Bob Martinez
+Software Engineer | Backend Specialist
+Email: bob.m@example.com
+
+Skills:
+- Java, Spring Boot, SQL, REST APIs
+- Cloud deployment on AWS and Docker
+- CI/CD pipelines with Jenkins
+
+Experience:
+2020–Present: Software Engineer at TechWave
+- Designed microservices architecture for internal CRM system.
+- Improved API response times by 30%.
+
+Education:
+B.Sc. in Software Engineering, Georgia Tech

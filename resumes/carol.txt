@@ -1,0 +1,16 @@
+Carol Lee
+UX/UI Designer | 4 years experience
+Email: carol.lee@example.com
+
+Skills:
+- Figma, Adobe XD, HTML/CSS
+- User research and A/B testing
+- Design systems and accessibility standards
+
+Experience:
+2019–Present: UX Designer at BrightApps
+- Led redesign of e-commerce platform, increasing conversions by 15%.
+- Collaborated closely with developers to implement responsive layouts.
+
+Education:
+B.A. in Graphic Design, New York University
