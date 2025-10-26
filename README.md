@@ -46,22 +46,16 @@ It provides:
 ```bash
 git clone https://github.com/<your-user>/ai_resume_analyzer.git
 cd ai_resume_analyzer
+
 2️⃣ Create & Activate Virtual Environment
-powershell
-Copy code
 python -m venv .venv_pg
 .\.venv_pg\Scripts\Activate.ps1
 pip install --upgrade pip
 (On Linux/macOS: source .venv_pg/bin/activate)
 
 3️⃣ Install Dependencies
-bash
-Copy code
 pip install -r requirements_pg.txt
 Example requirements_pg.txt:
-
-makefile
-Copy code
 google-generativeai==0.8.3
 fastapi==0.115.0
 uvicorn==0.30.6
@@ -74,20 +68,15 @@ SQLAlchemy==2.0.36
 pgvector==0.3.3
 langchain==0.3.3
 langchain-community==0.3.2
+
 🔑 Environment Variables
 Create a file named .env in your project root:
-
-ini
-Copy code
 GEMINI_API_KEY=your_google_api_key_here
 DATABASE_URL=postgresql+psycopg://USER:PASSWORD@HOST:PORT/DBNAME
 (For Neon, click “Connection Details” → Copy the psycopg3 connection URL and prefix with postgresql+psycopg://.)
 
 🧱 PostgreSQL Setup (Neon / Local)
 In your database SQL editor, run:
-
-sql
-Copy code
 CREATE EXTENSION IF NOT EXISTS vector;
 
 CREATE TABLE IF NOT EXISTS resume_chunks (
@@ -103,9 +92,8 @@ CREATE INDEX IF NOT EXISTS idx_resume_chunks_embedding
   ON resume_chunks
   USING ivfflat (embedding vector_cosine_ops)
   WITH (lists = 100);
+
 🧾 Directory Structure
-arduino
-Copy code
 ai_resume_analyzer/
 ├─ main.py
 ├─ vector_store_pg.py
@@ -118,27 +106,19 @@ ai_resume_analyzer/
 │  └─ (optional PDFs)
 ├─ job.txt
 └─ README.md
+
 🚀 Usage
 1️⃣ Ingest Resumes
-bash
-Copy code
 python main.py ingest --resumes ./resumes
 Example output:
-
-json
-Copy code
 {
   "added_files": 4,
   "added_chunks": 11
 }
+
 2️⃣ Ask a Question (CLI)
-bash
-Copy code
 python main.py ask --job ./job.txt --question "Which candidate is the best fit and why?"
 Example output:
-
-diff
-Copy code
 === ANSWER ===
 
 Alice Johnson is the best fit.
@@ -149,24 +129,18 @@ Alice Johnson is the best fit.
 - alice.txt#0
 - bob.txt#0
 - carol.txt#0
+
 3️⃣ API Mode (FastAPI)
 Run the API server:
-
-bash
-Copy code
 uvicorn main:app --host 0.0.0.0 --port 8000
 Interactive docs:
 👉 http://localhost:8000/docs
 
 /ingest – POST
-json
-Copy code
 {
   "resumes_dir": "./resumes"
 }
 /chat – POST
-json
-Copy code
 {
   "job_description": "We are hiring a machine learning engineer...",
   "question": "Which candidate fits best and why?",
