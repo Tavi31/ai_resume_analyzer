@@ -1,0 +1,25 @@
+# venvs
+.venv*/
+__pycache__/
+*.pyc
+
+# secrets / local config
+.env
+*.env
+*.env.local
+
+# local artifacts
+store/
+*.npy
+*.npz
+*.log
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# sample data you don't want public
+resumes/*
+!resumes/README.md

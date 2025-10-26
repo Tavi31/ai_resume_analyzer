@@ -1,0 +1,17 @@
+Machine Learning Engineer
+
+We are seeking a Machine Learning Engineer to join our analytics team.
+The ideal candidate has strong experience in Python, deep learning frameworks
+such as TensorFlow or PyTorch, and a solid understanding of data preprocessing
+and model deployment. Familiarity with cloud environments (AWS or GCP) and
+version control (Git) is a plus.
+
+Responsibilities:
+- Develop and deploy machine learning models for production.
+- Collaborate with data scientists and engineers to optimize data pipelines.
+- Ensure scalability and efficiency of model inference systems.
+
+Qualifications:
+- Bachelor’s degree in Computer Science or related field.
+- 2+ years of hands-on experience with machine learning projects.
+- Strong programming and analytical skills.

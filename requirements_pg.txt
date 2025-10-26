@@ -1,0 +1,17 @@
+# base
+google-generativeai==0.8.3
+fastapi==0.115.0
+uvicorn==0.30.6
+pydantic==2.9.2
+python-dotenv==1.0.1
+pypdf==5.0.1
+
+# numpy pinned for LangChain compatibility on Py 3.12
+numpy==1.26.4
+
+# mature stack adds
+psycopg[binary]
+SQLAlchemy==2.0.36
+pgvector==0.3.3
+langchain==0.3.3
+langchain-community==0.3.2
